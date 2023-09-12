@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I & E Cell : Interview</title>
+
+    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="./main.js" async></script>
+</head>
+<body>
+    <div id="particles-js"></div>
+  <div class="container">
+    
+      <h1>I&E Cell FE Member Interview Forms</h1>
+
+    <section>
+        <form action="https://docs.google.com/forms/d/e/1FAIpQLSfQEOreQ8ousjMHgBPLtI_5RLdkTaqnpPKdgpW9XP8UEw-Qzg/formResponse" method="post" id="myForm">
+                <label id="intro" class="is-visible">
+                    <label class="label-heading" for="intro">
+                        Howdy FEs, <br><br>
+                        You know who we are, you know what we do, it's time you join us too! <br><br>
+
+                        1. No prior experience is needed, only your interest and zeal to join the club matters. <br><br>
+
+                        2. Do fill all the fields. <br><br>
+
+                        3. Don't forget to mention your past achievements. <br><br>
+
+                        Interviews will be scheduled around 16 September 2023. <br><br>
+
+                        You can know more about us at : - @ecell_ait <br><br>
+
+                    </label>
+                    <div class="nav-btn-div">
+                        <button type="button" class="nav-button" value="next" onclick="next1('intro','name')">OK</button>
+                        Press <strong>Enter ↵</strong>
+                    </div>
+                    <div class="nav-btn-div">
+                        <i class="fa fa-arrow-down" style="font-size:24px" onclick="next1('intro','name')"></i>
+                    </div>
+                </label>
+                <label id="name" >
+                    <label class="label-heading" for="name">What's your name?</label>
+                    <input name="entry.1226557926" type="text" placeholder="name" required />
+                    <div class="nav-btn-div">
+                        <button type="button" class="nav-button" value="next" onclick="next('name','regno')">OK <i class="fa fa-check" aria-hidden="true"></i></button>
+                        Press <strong>Enter ↵</strong>
+                   </div>
+                    <div class="nav-btn-div">
+                        <i class="fa fa-arrow-up" style="font-size:24px" onclick="previous('name','intro')"></i>
+                        <i class="fa fa-arrow-down" style="font-size:24px" onclick="next('name','regno')"></i>
+                    </div>
+                </label>
+                <label id="regno">
+                    <label class="label-heading" for="regno">What's your Registration Number?</label>
+                    <input name="entry.691971928" type="number" placeholder="regno" required />
+                    <div class="nav-btn-div">
+                        <button type="button" class="nav-button" value="next" onclick="next('regno','email')">OK <i class="fa fa-check" aria-hidden="true"></i></button>
+                        Press <strong>Enter ↵</strong>
+                   </div>
+                    <div class="nav-btn-div">
+                        <i class="fa fa-arrow-up" style="font-size:24px" onclick="previous('regno','name')"></i>
+                        <i class="fa fa-arrow-down" style="font-size:24px" onclick="next('regno','email')"></i>
+                    </div>
+                </label>
+                <label id="email">
+                    <label class="label-heading" for="email">Your AIT Email Address</label>
+                    <input type="email" name="entry.1109633319" placeholder="yourname_regno@aitpune.edu.in" required />
+                    <br>
+                    <div class="nav-btn-div">
+                        <button type="button" class="nav-button" value="next" onclick="next('email','phone')">OK</button>
+                        Press <strong>Enter ↵</strong>
+                   </div>
+                    <div class="nav-btn-div">
+                        <i class="fa fa-arrow-up" style="font-size:24px" onclick="previous('email','name')"></i>
+                        <i class="fa fa-arrow-down" style="font-size:24px" onclick="next('email','phone')"></i>
+                    </div>
+                </label>
+                <label id="phone">
+                    <label class="label-heading" for="phone">Whatsapp Number</label>
+                    <input type="tel" name="entry.619014759" placeholder="phone" required />
+                    <br>
+                    <div class="nav-btn-div">
+                        <button type="button" class="nav-button" value="next" onclick="next('phone','branch')">OK <i class="fa fa-check" aria-hidden="true"></i></button>
+                        Press <strong>Enter ↵</strong>
+                   </div>
+                    <div class="nav-btn-div">
+                        <i class="fa fa-arrow-up" style="font-size:24px" onclick="previous('phone', 'email')"></i>
+                        <i class="fa fa-arrow-down" style="font-size:24px" onclick="next('phone','branch')"></i>
+                    </div>
+                </label>
+                <label id="branch">
+                    <label class="label-heading" for="branch">Branch :</label>
+                    <select name="entry.491481535" required>
+                        <option value="Comp A" style="color: rgb(0, 0, 0);">Comp A</option>
+                        <option value="Comp B" style="color: rgb(0, 0, 0);">Comp B</option>
+                        <option value="IT A" style="color: rgb(0, 0, 0);">IT A</option>
+                        <option value="IT B" style="color: rgb(0, 0, 0);">IT B</option>
+                        <option value="Entc A" style="color: rgb(0, 0, 0);">ENTC A</option>
+                        <option value="Entc B" style="color: rgb(0, 0, 0);">ENTC B</option>
+                        <option value="Mech" style="color: rgb(0, 0, 0);">Mech</option>
+                    </select>
+                    <br>
+                    <div class="nav-btn-div">
+                        <button type="button" class="nav-button" value="next" onclick="next('branch','rollno')">OK <i class="fa fa-check" aria-hidden="true"></i></button>
+                        Press <strong>Enter ↵</strong>
+                   </div>
+                    <div class="nav-btn-div">
+                        <i class="fa fa-arrow-up" style="font-size:24px" onclick="previous('branch', 'phone')"></i>
+                        <i class="fa fa-arrow-down" style="font-size:24px" onclick="next('branch','rollno')"></i>
+                    </div>
+                </label>
+                <label id="rollno">
+                    <label class="label-heading" for="rollno">What's your Roll Number?</label>
+                    <input name="entry.1022195527" type="number" placeholder="rollno" required />
+                    <div class="nav-btn-div">
+                        <button type="button" class="nav-button" value="next" onclick="next('rollno','q1')">OK <i class="fa fa-check" aria-hidden="true"></i></button>
+                        Press <strong>Enter ↵</strong>
+                   </div>
+                    <div class="nav-btn-div">
+                        <i class="fa fa-arrow-up" style="font-size:24px" onclick="previous('rollno','branch')"></i>
+                        <i class="fa fa-arrow-down" style="font-size:24px" onclick="next('rollno','q1')"></i>
+                    </div>
+                </label>
+                <label id="q1">
+                    <label class="label-heading" for="q1">Why do You want to join I&E cell ?</label>
+                    <input name="entry.431938640" type="text" placeholder="q1" required />
+                    <div class="nav-btn-div">
+                        <button type="button" class="nav-button" value="next" onclick="next('q1','q2')">OK <i class="fa fa-check" aria-hidden="true"></i></button>
+                        Press <strong>Enter ↵</strong>
+                   </div>
+                    <div class="nav-btn-div">
+                        <i class="fa fa-arrow-up" style="font-size:24px" onclick="previous('q1','rollno')"></i>
+                        <i class="fa fa-arrow-down" style="font-size:24px" onclick="next('q1','q2')"></i>
+                    </div>
+                </label>
+                <label id="q2">
+                    <label class="label-heading" for="q2">What are your Skills? (Can be technical, non-technical or both) </label>
+                    <input name="entry.1589242460" type="text" placeholder="q2" required />
+                    <div class="nav-btn-div">
+                        <button type="button" class="nav-button" value="next" onclick="next('q2','q3')">OK <i class="fa fa-check" aria-hidden="true"></i></button>
+                        Press <strong>Enter ↵</strong>
+                   </div>
+                    <div class="nav-btn-div">
+                        <i class="fa fa-arrow-up" style="font-size:24px" onclick="previous('q2','q1')"></i>
+                        <i class="fa fa-arrow-down" style="font-size:24px" onclick="next('q2','q3')"></i>
+                    </div>
+                </label>
+                <label id="q3">
+                    <label class="label-heading" for="q3">Anything you want to tell us about yourself? (Achievements, Hobbies, Passion) <br>
+                        Just mention anything you did before and in college that you are proud of.</label>
+                    <input name="entry.773924308" type="text" placeholder="q3" required />
+                    <div class="nav-btn-div">
+                        <button type="button" class="nav-button" value="next" onclick="next('q3','q4')">OK <i class="fa fa-check" aria-hidden="true"></i></button>
+                        Press <strong>Enter ↵</strong>
+                   </div>
+                    <div class="nav-btn-div">
+                        <i class="fa fa-arrow-up" style="font-size:24px" onclick="previous('q3','q2')"></i>
+                        <i class="fa fa-arrow-down" style="font-size:24px" onclick="next('q3','q4')"></i>
+                    </div>
+                </label>
+                <label id="q4">
+                    <label class="label-heading" for="address">Are you a FE member of any other club/board? (If yes, then specify.)
+                        </label>
+                    <input name="entry.199459100" type="text" placeholder="address" required />
+                    <br>
+                    <div class="nav-btn-div">
+                        <i class="fa fa-arrow-up" style="font-size:24px" onclick="previous('q4','q3')"></i>
+                        <button type="submit" class="nav-button" value="submit" onclick="next('q4','q5')">Submit</button>
+                    </div>
+                </label>
+                <label id="q5">
+                    <label class="label-heading" for="address"> Thank You! Your Response is Successfully Submitted.
+                        </label>
+                </label>
+                <p id="validate"></p>
+      </form>
+    </section>
+  </div>
+ <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> <!-- stats.js lib --> <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
+</body>
+</html>
